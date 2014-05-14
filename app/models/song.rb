@@ -13,6 +13,7 @@ class Song < ActiveRecord::Base
         :title => song['trackName'],
         :artwork_url => song['artworkUrl100']
       }
+    end
+    package_songs
   end
-  package_songs
 end
